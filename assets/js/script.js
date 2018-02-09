@@ -10,12 +10,12 @@ jQuery(document).ready(function($) {
 
  $(window).scroll(function(){
 
-        if ($(this).scrollTop() > 600 && !$('.navbar').hasClass('show-navbar') ) {
+        if ($(this).scrollTop() > 60 && !$('.navbar').hasClass('show-navbar') ) {
             $('.navbar').addClass('show-navbar');
             $('.navbar').slideDown();
-        } else if ( $(this).scrollTop() <= 600 ) {
+        } else if ( $(this).scrollTop() < 60 ) {
             $('.navbar').removeClass('show-navbar');
-            $('.navbar').slideUp();
+            //$('.navbar').slideUp();
         }
 
         if ($(this).scrollTop() > 100) {

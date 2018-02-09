@@ -2,14 +2,13 @@
 /* Variables */
 /**************************************************/
 /**************************************************/
-/* */
+/* Body */
 /**************************************************/
 body {
   color: #858585;
   font: 300 14px/14px "Lato", Helvetica, Arial, sans-serif;
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
-  background-color: #eee;
 }
 /**************************************************/
 /* Headings */
@@ -26,21 +25,21 @@ h1 {
   padding-top: 5px;
   padding-bottom: 0;
   text-transform: initial;
-  color: #fff;
+  color: #364B71;
 }
 h1.title {
   font: 700 20px "Lato", Helvetica, Arial, sans-serif;
   padding-top: 50px;
   padding-bottom: 5px;
   text-transform: initial;
-  color: #fff;
+  color: #364B71;
 }
 h1.sub-title {
-  font: 700 80px "Lato", Helvetica, Arial, sans-serif;
+  font: 700 50px "Lato", Helvetica, Arial, sans-serif;
   padding-top: 0;
   padding-bottom: 5px;
   text-transform: initial;
-  color: #fff;
+  color: #364B71;
 }
 h2 {
   font: 500 36px "Lato", Helvetica, Arial, sans-serif;
@@ -66,7 +65,6 @@ h4 {
 }
 h5 {
   font: 300 16px "Lato", Helvetica, Arial, sans-serif;
-  color: #fff;
   line-height: 22px;
 }
 p {
@@ -77,13 +75,9 @@ p {
 /**************************************************/
 /* Container */
 /**************************************************/
-.container {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
 .wrapper {
   background-color: #fff;
+  padding-top: 90px;
 }
 .spacer {
   padding: 5px 30% 5px 30%;
@@ -173,13 +167,10 @@ div.btn-project:active {
 .navbar-header {
   width: 50%;
 }
-.navbar-header,
-.navbar-nav {
-  margin-bottom: 10px;
-}
 .navbar-nav > li > a {
   font-size: 16px;
-  line-height: 32px;
+  line-height: 30px;
+  padding: 30px 20px;
 }
 .navbar-inverse {
   background: #111;
@@ -187,9 +178,10 @@ div.btn-project:active {
 .navbar-brand {
   color: #fff !important;
   background: #364B71 !important;
-  height: 60px;
+  height: 90px;
   font-weight: 700;
   text-transform: uppercase;
+  padding: 15px 0px;
 }
 .navbar-brand-link {
   width: 100%;
@@ -201,7 +193,8 @@ div.btn-project:active {
 }
 .navbar-brand .navbar-brand-role {
   font-size: 14px;
-  line-height: 15px;
+  line-height: 60px;
+  padding: 30px 10px;
 }
 .navbar-default .navbar-nav > li > a {
   color: #222 !important;
@@ -223,7 +216,8 @@ div.btn-project:active {
   margin-right: 0 !important;
 }
 .navbar-default {
-  opacity: 0;
+  opacity: 1;
+  display: block;
 }
 .show-navbar {
   background: none;
@@ -245,7 +239,7 @@ div.btn-project:active {
   display: block;
 }
 .navbar-toggle {
-  padding: 5px;
+  padding: 10px 5px;
   margin: 0px;
 }
 .right_bt span {
@@ -272,7 +266,7 @@ div.btn-project:active {
   padding: 30px 0;
 }
 .menu_box_list li a {
-  SSScolor: #FFF;
+  color: #FFF;
   font-size: 16px;
   text-transform: uppercase;
   font-family: 'Lato', sans-serif;
@@ -282,23 +276,14 @@ div.btn-project:active {
   transition: all 0.5s ease-in-out;
   font-weight: 600;
 }
-.banner {
-  background: url(../img/banner_bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 660px;
-}
-.overlay {
-  background: rgba(54, 75, 113, 0.6);
-  position: absolute;
-  padding: 20px;
-  width: 100%;
-  min-height: 660px;
-  text-align: center;
-}
 .content {
   margin: 30px 40px;
+}
+/**************************************************/
+/* Awesome icon */
+/**************************************************/
+.title .fa {
+  display: block;
 }
 /**************************************************/
 /* Scroll */
@@ -349,6 +334,9 @@ div.btn-project:active {
 /**************************************************/
 /* Banner */
 /**************************************************/
+.banner {
+  margin-top: 60px;
+}
 .banner-end-background {
   background: url(../img/banner-end-bg.png) no-repeat;
   background-size: cover;
@@ -376,12 +364,6 @@ div.btn-project:active {
   margin-bottom: 20px;
   border: 0;
   border-top: 4px solid #ddd;
-}
-.container {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  display: block;
 }
 .project {
   width: 100%;
@@ -578,10 +560,141 @@ div.btn-project:active {
   }
 }
 /**************************************************/
+/* Resume */
+/**************************************************/
+.resume {
+  background: #fff no-repeat;
+  background-size: cover;
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  vertical-align: baseline;
+  text-align: center;
+  padding: 60px 0;
+}
+.resume hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 4px solid #ddd;
+}
+/**************************************************/
+/* Timeline */
+/**************************************************/
+.timeline {
+  width: 100%;
+  margin: 30px auto;
+  position: relative;
+  padding: 0;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.timeline:before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  background: #364B71;
+  left: 20%;
+  top: 0;
+  position: absolute;
+}
+.timeline:after {
+  content: "";
+  clear: both;
+  display: table;
+  width: 100%;
+}
+.timeline .timeline-item {
+  margin-bottom: 50px;
+  position: relative;
+  display: inline-block;
+}
+.timeline .timeline-item .timeline-date {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  overflow: hidden;
+}
+.timeline .timeline-item .timeline-icon {
+  background: #364B71;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  overflow: hidden;
+  margin-left: -24px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.timeline .timeline-item .timeline-content {
+  width: 70%;
+  background: #fff;
+  padding: 20px;
+  -webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.timeline .timeline-item .timeline-content h4 {
+  padding: 15px;
+  background: #364B71;
+  color: #fff;
+  margin: -20px -20px 0 -20px;
+  font-weight: 300;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  -ms-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+.timeline .timeline-item .timeline-content p {
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.timeline .timeline-item .timeline-content:before {
+  content: '';
+  position: absolute;
+  left: 70%;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #364B71;
+}
+.timeline .timeline-item .timeline-content.right {
+  float: right;
+  text-align: left;
+}
+.timeline .timeline-item .timeline-content.right:before {
+  content: '';
+  right: 70%;
+  left: inherit;
+  border-left: 0;
+  border-right: 7px solid #364B71;
+}
+/**************************************************/
 /* Skills */
 /**************************************************/
 .skills {
-  background: #eeeeee no-repeat;
+  background: #fff no-repeat;
   background-size: cover;
   border: 0;
   font-family: inherit;
@@ -602,12 +715,6 @@ div.btn-project:active {
 }
 .skills__recently {
   margin-top: 40px;
-}
-.container {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  display: block;
 }
 .col {
   display: inline-block;
@@ -658,7 +765,7 @@ div.btn-project:active {
 /* Hobbies */
 /**************************************************/
 .hobbies {
-  background: #eeeeee no-repeat;
+  background: #fff no-repeat;
   background-size: cover;
   border: 0;
   font-family: inherit;
@@ -684,53 +791,22 @@ div.btn-project:active {
   margin-bottom: 20px;
 }
 /**************************************************/
-/* Service */
+/* Tags */
 /**************************************************/
-.service {
-  padding: 0 10em 32px 10em;
-  color: #fff;
-}
-.service p {
-  color: #EFACC2;
-  font-size: 16px;
-  line-height: 18px;
-  margin: 0;
-}
 .tags {
   border: 0;
   font-family: inherit;
   font-size: 100%;
   font-style: inherit;
   font-weight: inherit;
+  text-align: left;
   margin: 0;
   outline: 0;
-  padding: 10px 20%;
+  padding: 10px 0;
   vertical-align: baseline;
 }
-div.tag {
-  display: inline-block;
-}
-div.tag:hover {
-  background-color: #364B71;
-  color: #eeeeee;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1;
-  text-transform: uppercase;
-  display: inline-block;
-  margin-right: 1px;
-  margin-bottom: 4px;
-  padding: 5px;
-  border: 3px solid #eeeeee;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-  -webkit-transition: all .15s linear 0s;
-  -moz-transition: all .15s linear 0s;
-  transition: all .15s linear 0s;
-}
-div.tag:hover span {
-  color: #eeeeee;
+.tag {
+  display: block;
 }
 .tags span {
   color: #858585;
@@ -944,6 +1020,7 @@ div.tag:hover span {
   }
   .navbar-nav > li > a {
     line-height: 16px;
+    padding: 15px 0;
   }
   .navbar-header {
     width: auto;
@@ -952,10 +1029,10 @@ div.tag:hover span {
     padding: 10px;
     height: 50px;
     line-height: 32px;
-    margin-left: 15px !important;
+    margin-left: 0px;
   }
   .navbar-brand-link {
-    width: calc(100% - 100px);
+    width: calc(100% - 52px);
   }
   .navbar-default {
     background: #fff !important;
@@ -1019,6 +1096,7 @@ div.tag:hover span {
   .navbar-brand .navbar-brand-role {
     font-size: 12px;
     line-height: 18px;
+    padding: 5px 0;
     display: block;
   }
   .navbar-brand-link {
