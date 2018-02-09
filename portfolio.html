@@ -1,61 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-		<title>Daniel Goldaraz | Portfolio</title>
-
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
-		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="assets/animate/animate.css" />
-		<link rel="stylesheet" href="assets/css/style.css">
-		<link rel="stylesheet" type="text/css" href="assets/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
-
-		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">		
-
-		<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-		<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
-	</head>
-
-	<body id="home">
+        <script src="assets/js/jquery.min.js"></script>
+        <script> 
+            $(function(){ $("head").load("head.html") });
+        </script>
+    </head>
+    
+	<body id="portfolio">
 
 		<!-- Header -->
-		<div class="navbar-wrapper">
-			<div class="navbar navbar-default navbar-fixed-top" id="top-nav">
-
-				<div class="navbar-header">
-				  <!-- Logo -->
-				  <a class="navbar-brand">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                        </button>
-                          <a class="navbar-brand navbar-brand-link" href="index.html">
-                              <span class="navbar-brand-name">Daniel Goldaraz</span>
-                              <span class="navbar-brand-role">Gameplay Programmer</spam>
-                          </a>
-                  </a>
-                  <!-- Logo Ends -->
-				</div>
-
-				<!-- Nav -->
-				<div class="navbar-collapse collapse">
-                    <div>
-                        <ul class="nav navbar-nav navbar-right scroll">
-                            <li><a href="index.html">Home</a></li> 
-                            <li class="active"><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="resume.html">Resume</a></li>
-                            <li><a href="contact.html">Contact</a></li>                 
-                        </ul>
-                    </div>
-                </div>
-                <!-- Nav Ends -->
-			  
-			</div>
-		</div>
+		<div id="header"></div> 
 		<!-- Header Ends -->
 
 		<!-- Content -->
@@ -550,61 +505,13 @@
         <!-- Content Ends -->
         
         <!-- Footer -->
-        <div class="footer text-center">
-            <div class="footer-left-side">
-                <div class="footer-left-side__container">
-                    <nav class="socialnav socialnav--footer">
-                        <ul>
-                                <!--<li>
-                                <a class="socialnavitem socialnavitem--itchio" href="https://dgoldaraz.itch.io" target="_blank"><span class="fa fa-itchio"></span></a>
-                            </li>
-                            -->
-                            <li>
-                                <a class="socialnavitem socialnavitem--twitter" href="https://twitter.com/dani_goldlan" target="_blank"><span class="fa fa-twitter"></span></a>
-                            </li>
-                            <li>
-                                <a class="socialnavitem socialnavitem--linkedin" href="https://www.linkedin.com/in/danielgoldaraz/" target="_blank"><span class="fa fa-linkedin"></span></a>
-                            </li>
-                            <li>
-                                <a class="socialnavitem socialnavitem--github" href="https://github.com/dgoldaraz" target="_blank"><span class="fa fa-github"></span></a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <div class="footer-right-side">
-                <div class="footer-right-side__container">
-                    <p>
-                        Designed and coded with <span class="glyphicon glyphicon-heart"></span> by <a href="https://elenasanchezp.github.io/" target="_blank">Elena.</a>
-                    </p>
-                </div>
-            </div>
-        </div>
+		<div id="footer"></div>
         <!-- Footer Ends -->
+
+        <script> 
+            $("#header").load("header.html");
+            $("#footer").load("footer.html"); 
+        </script>  
         
-        <a href="#home" class="backToTop">
-            <i class="fa fa-angle-up  fa-3x"></i>
-        </a>
-
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/wow/wow.min.js"></script>
-		<script src="assets/bootstrap/js/bootstrap.js" type="text/javascript" ></script>
-		<script src="assets/js/mobile/touchSwipe.min.js"></script>
-		<script src="assets/js/script.js"></script>
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-		<script type="text/javascript" src="assets/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
-		<script type="text/javascript" src="assets/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-
-		<script type="text/javascript">
-			$(document).ready(function() {
-
-				$(".img-project").fancybox({
-					'overlayShow'	: false,
-					'transitionIn'	: 'elastic',
-					'transitionOut'	: 'elastic'
-				});
-
-			});
-		</script>
 	</body>
 </html>
