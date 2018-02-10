@@ -1,14 +1,14 @@
 jQuery(document).ready(function($) {
  
-    $(".scroll a, .backToTop").click(function(event){   
+/*     $(".scroll a, .backToTop").click(function(event){   
             event.preventDefault();
             $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500,'swing');
             $(".scroll li").removeClass('active');
             $(this).parents('li').toggleClass('active');
         });
-    });
+    }); */
 
- $(window).scroll(function(){
+/*  $(window).scroll(function(){
 
         if ($(this).scrollTop() > 60 && !$('.navbar').hasClass('show-navbar') ) {
             $('.navbar').addClass('show-navbar');
@@ -23,7 +23,7 @@ jQuery(document).ready(function($) {
         } else {
             $('.backToTop').fadeOut();
         }
-    });
+    }); */
 
 var wow = new WOW(
   {
