@@ -165,12 +165,14 @@ div.btn-project:active {
 /* Navbar */
 /**************************************************/
 .navbar-header {
-  width: 50%;
+  width: 100%;
+  float: none;
+  background: #364B71;
 }
 .navbar-nav > li > a {
   font-size: 16px;
   line-height: 30px;
-  padding: 30px 20px;
+  padding: 30px 10px;
 }
 .navbar-inverse {
   background: #111;
@@ -183,9 +185,19 @@ div.btn-project:active {
   text-transform: uppercase;
   padding: 15px 0px;
 }
+.show-navbar .navbar-brand {
+  height: 60px;
+}
+.show-navbar .navbar-brand .navbar-brand-role {
+  padding: 15px 10px;
+  line-height: 14px;
+}
+.show-navbar .navbar-nav > li > a {
+  padding: 15px 20px;
+}
 .navbar-brand-link {
-  width: 100%;
-  text-align: right;
+  width: 50%;
+  text-align: left;
 }
 .navbar-brand .navbar-brand-name {
   font-size: 18px;
@@ -210,7 +222,8 @@ div.btn-project:active {
   color: #fff !important;
 }
 .navbar-default .navbar-nav > li > a:hover {
-  color: #2ad2b0 !important;
+  background-color: #2ad2b0;
+  color: #fff !important;
 }
 .navbar-nav.navbar-right:last-child {
   margin-right: 0 !important;
@@ -225,7 +238,9 @@ div.btn-project:active {
   opacity: 1 !important;
 }
 .navbar-default .navbar-collapse {
-  background: #fafafa;
+  position: absolute;
+  top: 0;
+  right: 15px;
 }
 .nav-collapse ul {
   margin: 0;
@@ -241,6 +256,10 @@ div.btn-project:active {
 .navbar-toggle {
   padding: 10px 5px;
   margin: 0px;
+}
+.navbar-nav li {
+  background: #fafafa;
+  margin: 5px 2px;
 }
 .right_bt span {
   width: 37px;
@@ -857,6 +876,10 @@ div.btn-project:active {
   font-size: 16px;
   color: #aaa;
   min-height: 75px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 .footer a {
   color: #2ad2b0;
@@ -942,6 +965,7 @@ div.btn-project:active {
   -o-transition: all 1s ease-out;
   transition: all 1s ease-out;
   text-align: center;
+  display: none;
 }
 .backToTop:hover {
   background-color: #2ad2b0;
@@ -981,9 +1005,6 @@ div.btn-project:active {
   }
   .service p {
     font-size: 14px;
-  }
-  .navbar-brand {
-    height: 56px;
   }
   .btn,
   .btn-project {
@@ -1032,10 +1053,26 @@ div.btn-project:active {
     margin-left: 0px;
   }
   .navbar-brand-link {
-    width: calc(100% - 52px);
+    width: calc(100% - 100px);
+  }
+  .navbar-brand .navbar-brand-name {
+    font-size: 16px;
+    line-height: 14px;
+    display: block;
+  }
+  .navbar-brand .navbar-brand-role {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 5px 0;
+    display: block;
   }
   .navbar-default {
     background: #fff !important;
+  }
+  .navbar-default .navbar-collapse {
+    position: relative;
+    top: 0;
+    right: 0;
   }
   .navbar-default .navbar-toggle,
   .navbar-default .navbar-toggle:hover,
@@ -1087,17 +1124,6 @@ div.btn-project:active {
   }
   h1.sub-title {
     font-size: 28px;
-  }
-  .navbar-brand .navbar-brand-name {
-    font-size: 16px;
-    line-height: 14px;
-    display: block;
-  }
-  .navbar-brand .navbar-brand-role {
-    font-size: 12px;
-    line-height: 18px;
-    padding: 5px 0;
-    display: block;
   }
   .navbar-brand-link {
     text-align: left;
