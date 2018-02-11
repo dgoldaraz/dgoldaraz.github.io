@@ -988,7 +988,7 @@ div.btn-project:active {
 /**************************************************/
 /* Styling Responsive */
 /**************************************************/
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   body {
     font-size: 13px;
     line-height: 15px;
@@ -1027,7 +1027,7 @@ div.btn-project:active {
     font-size: 16px;
   }
 }
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   body {
     font: 300 12px/12px "Lato", Helvetica, Arial, sans-serif;
   }
@@ -1138,7 +1138,7 @@ div.btn-project:active {
     width: 100%;
   }
 }
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   h1.title {
     font-size: 18px;
   }
@@ -1181,7 +1181,7 @@ div.btn-project:active {
     line-height: 21px;
   }
 }
-@media (max-width: 320px) {
+@media only screen and (max-width: 320px) {
   .circle h1 {
     font-size: 12px;
   }
