@@ -1,0 +1,74 @@
+
+/**************************************************/
+/* Links */
+/**************************************************/
+
+    a {
+        color: @link-color;
+        text-decoration: none;
+    }
+    a:hover {
+        color: @link-color;
+    }
+    .btn,
+    .btn-project,
+    a,
+    .btn:hover,
+    .btn-project:hover,
+    a:hover { 
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        outline: none !important;
+    }
+    div.btn {
+        background-color: #ffffff;
+        color: @link-color;
+        border: none;
+        border-radius: 0;
+        text-transform: uppercase;
+        width: 200px;
+        height: 50px;
+        font-weight: 800;
+        font-size: 15px;
+        text-align: center;
+        line-height: 42px;  
+        cursor: pointer;
+    }
+
+    div.btn:hover,
+    div.btn:active {
+        fill: @color-white;
+        color: @color-white;
+        background-color: #2ad2b0;
+        text-shadow: 0.1em 0.1em 0px rgba(0,0,0,0.1);
+    }
+
+    div.btn-project {
+        background-color: #2ad2b0;
+        color: @color-white;
+        border: none;
+        border-radius: 0;
+        text-transform: uppercase;
+        width: 200px;
+        height: 50px;
+        font-weight: 800;
+        font-size: 15px;
+        text-align: center;
+        line-height: 48px;  
+        cursor: pointer;
+    }
+
+    div.btn-project:hover,
+    div.btn-project:active {
+        fill: @link-color;
+        color: @link-color;
+        background-color: @color-white;
+        text-shadow: 0.1em 0.1em 0px rgba(0,0,0,0.1);
+    }
+
+    .btn-danger {
+        background: rgb(242, 24, 97) !important;
+    }

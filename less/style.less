@@ -229,7 +229,7 @@
                 line-height: 14px;
             }
             .navbar-nav > li > a {
-                padding: 15px 20px;
+                padding: 15px 10px;
             }
         }
         .navbar-brand-link{
@@ -299,6 +299,9 @@
             background: #fafafa; 
             margin: 5px 2px;
         }
+
+
+        
         .right_bt span {
             width: 37px;
             height: 25px;
@@ -332,9 +335,6 @@
             -o-transition: all 0.5s ease-in-out;
             transition: all 0.5s ease-in-out;
             font-weight: 600;
-        }
-        .content {
-            margin: 30px 40px;   
         }
 
     /**************************************************/
@@ -761,7 +761,7 @@
 
                     p {
                         font-size: 16px;
-                        padding: 10px;
+                        padding: 10px 0;
                         margin-bottom: 10px;
                     }
 
@@ -870,6 +870,7 @@
         }
 
         .download-title a {
+            font-size: 14px;
             color: @primary-color;            
         }
 
@@ -921,6 +922,8 @@
             outline: 0;
             padding: 10px 0;
             vertical-align: baseline;
+            width: 100%;
+            float: none;
         }
         
         .tag {
@@ -977,48 +980,25 @@
         .footer {
             background-color: #111;
             color: @color-white;
-            font-size: 16px;
             color: #aaa;
-            min-height: 75px;
             position: absolute;
             right: 0;
             left: 0;
             top: 100%;
             bottom: 0;
-        }
-        .footer a {
-            color: @link-color;
-            margin: 0 5px;
-        }
-        .footer hr {
-            width: 100px;
-            margin: 50px auto;
-        }
-        .footer.social a {
-            font-size: 21px;
-            margin-right: 16px;
-        }
+            min-height: 40px;
 
-        .footer-left-side, 
-        .footer-right-side{
-            width:50%; 
-            float: left;
-            padding: 10px 0;
-            background-color: #111;
-            height: 78px;
-        }
+            p {
+                margin-bottom: 0;
+                padding: 5px 0;
+                font-size: 14px;
+                line-height: 27px;
+            }
 
-        .footer-left-side__container, 
-        .footer-right-side__container{
-            width: 100%; 
-            height: 100%; 
-            padding: 10px 0;
-        }
-
-        .footer-right-side__container p{
-            margin: 0; 
-            font-size: 14px;
-            line-height: 38px;
+            a {
+                color: @link-color;
+                margin: 0 5px;
+            }
         }
 
         .socialnav .socialnavitem {
@@ -1251,9 +1231,10 @@
             }
             }
 
-            .footer-left-side, 
-            .footer-right-side{
-                width: 100%;  
+            .tag {
+                display: block;
+                width: 20%;
+                float: left;
             }
         }
 
@@ -1266,6 +1247,10 @@
             }
             .navbar-brand-link {
                 text-align: left; 
+            }
+
+            .wrapper {
+                padding-top: 20px;
             }
 
             .project .item {
@@ -1314,6 +1299,49 @@
             .project-description p {
                 font-size: 14px;
                 line-height: 21px;
+            }
+
+            .timeline {
+
+                &:before {
+                    display:none;
+                }
+
+                .timeline-item {
+
+                    .timeline-date {
+                       position: relative;
+                       top: auto;
+                       left: auto;
+                       text-align: left;
+                    }
+
+                     .timeline-icon {
+                        display: none;
+                    }
+
+                    .timeline-content {
+                        width: 100%;
+
+                        &.right:before {
+                            display:none;
+                        }
+
+                        h4 {
+                            font-size: 16px;
+                        }
+
+                        p {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+            .tag {
+                display: block;
+                width: 50%;
+                float: left;
             }
         }
 

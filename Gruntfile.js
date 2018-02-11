@@ -17,12 +17,12 @@ module.exports = function(grunt) {
 				cleancss: true
 			},
 			files: {
-				"assets/css/style.min.css": 'less/style.less'
+				"assets/css/style.min.css": 'less/app.less'
 			}
 		},
 		development: {
 			files: {
-				"assets/css/style.css": 'less/style.less'
+				"assets/css/style.css": 'less/app.less'
 			}
 		}
     }

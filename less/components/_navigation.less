@@ -1,0 +1,104 @@
+
+/**************************************************/
+/* Navigation */
+/**************************************************/
+    .navbar-header {
+        width: 100%;
+        float: none;
+        background: @primary-color; 
+    }
+    .navbar-nav > li > a {
+        font-size: 16px;
+        line-height: 25px;
+        padding: 30px 10px;
+    }
+    .navbar-inverse {
+        background: #111;
+    }
+    .navbar-brand {
+        color: @color-white !important;
+        background: @primary-color !important;
+        height: 90px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 15px 0px;
+    }
+    .show-navbar {
+        .navbar-brand{
+            height: 60px;
+        }
+        .navbar-brand .navbar-brand-role {
+            padding: 15px 10px;
+            line-height: 14px;
+        }
+        .navbar-nav > li > a {
+            padding: 15px 10px;
+        }
+    }
+    .navbar-brand-link{
+        width: 50%; 
+        text-align: left; 
+    }
+
+    .navbar-brand .navbar-brand-name {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .navbar-brand .navbar-brand-role {
+    font-size: 14px;
+    line-height: 60px;
+    padding: 30px 10px;
+    }
+    .navbar-default .navbar-nav>li>a {
+        color: @color-black !important;
+        font-weight: 700;
+    }
+    .navbar-default .navbar-nav>.active>a,
+    .navbar-default .navbar-nav>.active>a:focus {
+        background-color: @link-color;
+        color: @color-white !important;
+    }
+    .navbar-default .navbar-nav>.active>a:hover { 
+        background-color: @link-color;
+        color: @color-white !important;
+    }
+    .navbar-default .navbar-nav>li>a:hover { 
+        background-color: @link-color;
+        color: @color-white !important;
+    }
+    .navbar-nav.navbar-right:last-child {
+        margin-right: 0 !important;
+    }
+    .navbar-default {
+        opacity: 1;
+        display: block;
+    }
+    .show-navbar {
+        background: none;
+        border: none;
+        opacity: 1 !important;
+    }
+    .navbar-default .navbar-collapse {
+        position: absolute;
+        top: 0;
+        right: 15px;
+    }
+    .nav-collapse ul {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: block;
+        list-style: none;
+    }
+    .nav-collapse li {
+        width: 100%;
+        display: block;
+    }
+    .navbar-toggle {
+        padding: 10px 5px;
+        margin: 0px;
+    }
+    .navbar-nav li {
+        background: #fafafa; 
+        margin: 5px 2px;
+    }

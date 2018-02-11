@@ -1,0 +1,41 @@
+
+/**************************************************/
+/* Back to top */
+/**************************************************/
+
+    .backToTop {
+        position: fixed;
+        bottom: 0;
+        right: 20px;
+        min-width: 80px;
+        min-height: 40px; 
+        background: @primary-color;
+        padding: 5px;
+        color: #fff;
+        -webkit-transition: all 1s ease-out;
+        -moz-transition: all 1s ease-out;
+        -o-transition: all 1s ease-out;
+        transition: all 1s ease-out;
+        text-align: center;
+        display: none;
+    }
+
+    .backToTop:hover {
+        background-color: @link-color;
+        color: #fff;
+        text-decoration: none; 
+    } 
+
+    .scroll {
+        text-align: center;
+    }
+    .scroll p,
+    .scroll a {
+        color: @color-white;
+        font-size: 22px;
+        margin-bottom: 0px !important;
+    }
+    .scroll svg {
+        animation: floating 2s infinite;
+        width: 30px;
+    }
