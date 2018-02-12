@@ -27,18 +27,12 @@ isContactActive:
 					<p>Welcome to my portfolio. Here you will find all my different projects and works that I have been doing during my life. As you can see, videogames are my passion and I always look forward to learn new things and improve my skills with new technologies. Although my mains skills are related to programmation, I enjoy everything related with games, from design to modeling.</p>
 				</div>
 	
-				<ul class="posts">
-					{% for post in site.posts %}
-					<li><a href="{{ post.url }}" title="{{ post.id }}">{{ post.title }}</a></li>
-					{% endfor %}
-				</ul>
-
 				<div class="portfolio-grid">
 
 					<section class="thumbnail-grid flex">
 						{% for post in site.posts %}
-						<a href="javascript:void(0)" class="flex-item" onclick="openNav('{{ post.id }}')">
-							<figure class="{{ post.id }}-figure">
+						<a href="{{ post.url }}" class="flex-item">
+							<figure class="{{ post.categories }}-figure">
 								<figcaption>{{ post.title }}</figcaption>
 							</figure>
 						</a>

@@ -1,6 +1,6 @@
 ---
 layout: post
-id: pathfinding
+categories: pathfinding
 title: "Pathfinding Project"
 date: 2014-04-30
 ---

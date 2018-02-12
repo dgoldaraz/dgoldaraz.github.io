@@ -1,6 +1,6 @@
 ---
 layout: post
-id: rocket_landing
+categories: rocket_landing
 title: "Rocket Landing Game"
 date: 2014-04-30
 ---
