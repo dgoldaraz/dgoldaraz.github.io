@@ -8,7 +8,7 @@ layout: feed
   <link href="https://dgoldaraz.github.io/portfolio/atom.xml" rel="self"/>
   <link href="https://dgoldaraz.github.io/portfolio"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>https://dgoldaraz.github.io/portfolio</id>
+  <id>{{ post.id }}</id>
   <author>
     <name>Daniel Goldaraz</name>
     <email>dgoldaraz@gmail.com</email>
@@ -19,7 +19,7 @@ layout: feed
     <title>{{ post.title }}</title>
     <link href="https://dgoldaraz.github.io{{ post.url }}"/>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
-    <id>https://dgoldaraz.github.io/portfolio/{{ post.id }}</id>
+    <id>{{ post.id }}</id>
     <content type="html">{{ post.content | xml_escape }}</content>
   </entry>
   {% endfor %}
