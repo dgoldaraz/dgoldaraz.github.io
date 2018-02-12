@@ -23,203 +23,202 @@ isContactActive:
 		
 			<div class="container"> 
 
-				<div class="row">
-					<div class="col-sm-12">
-						<div class="portfolio-description">
-							<p>Welcome to my portfolio. Here you will find all my different projects and works that I have been doing during my life. As you can see, videogames are my passion and I always look forward to learn new things and improve my skills with new technologies. Although my mains skills are related to programmation, I enjoy everything related with games, from design to modeling.</p>
-						</div>
-					</div>
+				<div class="portfolio-description">
+					<p>Welcome to my portfolio. Here you will find all my different projects and works that I have been doing during my life. As you can see, videogames are my passion and I always look forward to learn new things and improve my skills with new technologies. Although my mains skills are related to programmation, I enjoy everything related with games, from design to modeling.</p>
 				</div>
+	
+				<ul class="posts">
+					{% for post in site.posts %}
+					<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+					{% endfor %}
+					
+				</ul>
 
-				<div class="row">
-					<div class="col-sm-12">
-						<div class="portfolio-grid">
+				<div class="portfolio-grid">
 
-							<section class="thumbnail-grid flex">
-								<a href="javascript:void(0)" class="flex-item" onclick="openNav('bubble_experiment')">
-									<figure class="bubble_experiment-figure">
-										<figcaption>Bubble Experiment</figcaption>
-									</figure>
-								</a>
-								<a href="javascript:void(0)" class="flex-item" onclick="openNav('away')">
-									<figure class="away-figure">
-										<figcaption>Away - GBJam 5</figcaption>
-									</figure>
-								</a>
-								<a href="javascript:void(0)" class="flex-item" onclick="openNav('rocket_landing')">
-									<figure class="rocket_landing-figure">
-										<figcaption>Rocket Landing Game</figcaption>
-									</figure>
-								</a>
-								<a href="javascript:void(0)" class="flex-item" onclick="openNav('path_finding')">
-									<figure class="-figure">
-										<figcaption>Pathfinding Project</figcaption>
-									</figure>
-								</a>
-								<a href="javascript:void(0)" class="flex-item" onclick="openNav('laser_defender')">
-									<figure class="laser_defender-figure">
-										<figcaption>Laser Defender Game</figcaption>
-									</figure>
-								</a>
-								<a href="javascript:void(0)" class="flex-item" onclick="openNav('block_breaker')">
-									<figure class="block_breaker-figure">
-										<figcaption>Block Breaker Game</figcaption>
-									</figure>
-								</a>
-							</section>
+					<section class="thumbnail-grid flex">
+						<a href="javascript:void(0)" class="flex-item" onclick="openNav('bubble_experiment')">
+							<figure class="bubble_experiment-figure">
+								<figcaption>Bubble Experiment</figcaption>
+							</figure>
+						</a>
+						<a href="javascript:void(0)" class="flex-item" onclick="openNav('away')">
+							<figure class="away-figure">
+								<figcaption>Away - GBJam 5</figcaption>
+							</figure>
+						</a>
+						<a href="javascript:void(0)" class="flex-item" onclick="openNav('rocket_landing')">
+							<figure class="rocket_landing-figure">
+								<figcaption>Rocket Landing Game</figcaption>
+							</figure>
+						</a>
+						<a href="javascript:void(0)" class="flex-item" onclick="openNav('path_finding')">
+							<figure class="-figure">
+								<figcaption>Pathfinding Project</figcaption>
+							</figure>
+						</a>
+						<a href="javascript:void(0)" class="flex-item" onclick="openNav('laser_defender')">
+							<figure class="laser_defender-figure">
+								<figcaption>Laser Defender Game</figcaption>
+							</figure>
+						</a>
+						<a href="javascript:void(0)" class="flex-item" onclick="openNav('block_breaker')">
+							<figure class="block_breaker-figure">
+								<figcaption>Block Breaker Game</figcaption>
+							</figure>
+						</a>
+					</section>
 
-							<div id="bubble_experiment-layer" class="project-overlay">  
-								<a href="javascript:void(0)" class="closebtn" onclick="closeNav('bubble_experiment')">&times;</a>
-								
-									<div class="project project-overlay__content">
-										<div class="project-title">
-											<h2 class="text-center">Bubble Experiment</h2><em class="text-center">October, 2016</em>
+					<div id="bubble_experiment-layer" class="project-overlay">  
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav('bubble_experiment')">&times;</a>
+						
+							<div class="project project-overlay__content">
+								<div class="project-title">
+									<h2 class="text-center">Bubble Experiment</h2><em class="text-center">October, 2016</em>
+								</div>
+
+								<div class="project-description">
+									<p>You have been involved in a new scientific test! Some doctors discovered a strange thing that produces bubbles. You need to destroy all the bubbles so the science can go forward!.</p>
+									
+									<p class="hidden-xs">This is the classic PANG game adapted to a new visual environment in Unity. The game try to capture the old essence of the game, but adding new items and components to give it a new Sci-fi style.</p>
+								</div>
+
+								<div class="project-actions">
+									<a href="https://dgoldaraz.itch.io/bubble-experiment" target="_blank">
+										<div class="btn-project">
+											<div>Find out more <i class="fa fa-arrow-circle-right"></i></div>
 										</div>
-
-										<div class="project-description">
-											<p>You have been involved in a new scientific test! Some doctors discovered a strange thing that produces bubbles. You need to destroy all the bubbles so the science can go forward!.</p>
-											
-											<p class="hidden-xs">This is the classic PANG game adapted to a new visual environment in Unity. The game try to capture the old essence of the game, but adding new items and components to give it a new Sci-fi style.</p>
-										</div>
-
-										<div class="project-actions">
-											<a href="https://dgoldaraz.itch.io/bubble-experiment" target="_blank">
-												<div class="btn-project">
-													<div>Find out more <i class="fa fa-arrow-circle-right"></i></div>
-												</div>
-											</a>
-										</div>
-									</div>
+									</a>
+								</div>
 							</div>
-
-							<div id="away-layer" class="project-overlay">  
-								<a href="javascript:void(0)" class="closebtn" onclick="closeNav('away')">&times;</a>
-								
-									<div class="project project-overlay__content">
-										<div class="project-title">
-											<h2 class="text-center">Away - GBJam 5</h2><em class="text-center">October, 2016</em>
-										</div>
-
-										<div class="project-description">
-											<p>This game was made for the GBJam5. The rules of this game jam where to create a GameBoy style game, with a low resolution (160x144) and four colors.</p>
-											<p> The theme of this game it's a mix between infinite scroller and stealth game, based on games like MGS. The aim of the player it's avoid the different obstacles (generated procedurally), avoid/kill the enemies and avoid get raised by the spot Light on the left.</p>
-											<p class="hidden-xs">I worked in a group of six (3 programers, 2 artist and a musician) to create it. My role in this game (as a creator and programmer) was related with the main gameplays of the game and the creation of the procedural generator.</p>
-										</div>
-
-										<div class="project-actions">
-											<a href="https://dgoldaraz.itch.io/away-gbjam5" target="_blank">
-												<div class="btn-project">
-													<div>Find out more <i class="fa fa-arrow-circle-right"></i></div>
-												</div>
-											</a>
-										</div>
-									</div>
-							</div>
-
-							<div id="rocket_landing-layer" class="project-overlay">  
-								<a href="javascript:void(0)" class="closebtn" onclick="closeNav('rocket_landing')">&times;</a>
-								
-									<div class="project project-overlay__content">
-										<div class="project-title">
-											<h2 class="text-center">Rocket Landing Game</h2><em class="text-center">September, 2016</em>
-										</div>
-
-										<div class="project-description">
-											<p>This game is the result of my own implementation of a RigidBody in Unity3D, used to simulate a spaceship and the effect of gravity/accelerations.</p>
-											<p class="hidden-xs">In this game you need to save your delivery company landing your merchandise rocket in different scenarios. You will need to deal with the obstacles in the field, different gravities, the weight of your rocket (depending of the fuel) and more.</p>
-										</div>
-
-										<div class="project-actions">
-											<a href="https://dgoldaraz.itch.io/rocket-landing" target="_blank">
-												<div class="btn-project">
-													<div>Find out more <i class="fa fa-arrow-circle-right"></i></div>
-												</div>
-											</a>
-										</div>
-									</div>
-							</div>
-
-							<div id="path_finding-layer" class="project-overlay">  
-								<a href="javascript:void(0)" class="closebtn" onclick="closeNav('path_finding')">&times;</a>
-								
-									<div class="project project-overlay__content">
-										<div class="project-title">
-											<h2 class="text-center">Pathfinding Project</h2><em class="text-center">September, 2016</em>
-										</div>
-
-										<div class="project-description">
-											<p>This is a basic experimental project to test different PathFinding Algorithms​ (Dijkstra and A*)using Unity. To that pourpose, I created a basic grid where the user can create walls and decide the target to reach. Then the different algorithm will show how the player creates and follow the path to reach the destination.</p>
-											<p class="hidden-xs">This example has a set of utilities for the user to test the pathfinding. This means that there are two different cameras (Ortho-Graphic and perspective), the user can do multiselection of tiles (pressing Alt) and decide the use of diagonal movements or not.</p>
-										</div>
-
-										<div class="project-actions">
-											<a href="https://dgoldaraz.itch.io/pathfinding-experiment" target="_blank">
-												<div class="btn-project">
-													<div>Find out more <i class="fa fa-arrow-circle-right"></i></div>
-												</div>
-											</a>
-										</div>
-									</div>
-							</div>
-
-							<div id="laser_defender-layer" class="project-overlay">  
-								<a href="javascript:void(0)" class="closebtn" onclick="closeNav('laser_defender')">&times;</a>
-								
-									<div class="project project-overlay__content">
-										<div class="project-title">
-											<h2 class="text-center">Laser Defender Game</h2><em class="text-center">February, 2016</em>
-										</div>
-
-										<div class="project-description">
-											<p>This is an Arcade game where you need to reach the maximum distance on your escape from the big Company. To do that, you should avoid any collision and you need to destroy different squadrons. </p>
-											<p class="hidden-xs">This game, made in Unity, has a dynamic difficult system of squadrons/ships. Depending on the distance covered, the squadrons will dynamically change and increase the difficulty. Also it includes a set of <em>"initial players"</em>  that allows to decide different ways of play.</p>
-										</div>
-
-										<div class="project-actions">
-											<a href="https://dgoldaraz.itch.io/laser-defender-the-long-journey" target="_blank">
-												<div class="btn-project">
-													<div>Find out more <i class="fa fa-arrow-circle-right"></i></div>
-												</div>
-											</a>
-										</div>
-									</div>
-							</div>
-
-							<div id="block_breaker-layer" class="project-overlay">  
-								<a href="javascript:void(0)" class="closebtn" onclick="closeNav('block_breaker')">&times;</a>
-								
-									<div class="project project-overlay__content">
-										<div class="project-title">
-											<h2 class="text-center">Block Breaker Game</h2><em class="text-center">December, 2015</em>
-										</div>
-
-										<div class="project-description">
-											<p>This is an Arkanoid game made with Unity, with some added features. You can use both your mouse or your Keyboard to move the paddle.</p> 
-											<p>There is a total of 10 levels to play, movable blocks and different perks that change the game.</p>
-										</div>
-
-										<div class="project-actions">
-											<a href="https://dgoldaraz.itch.io/block-breaker" target="_blank">
-												<div class="btn-project">
-													<div>Find out more <i class="fa fa-arrow-circle-right"></i></div>
-												</div>
-											</a>
-										</div>
-									</div>
-							</div>
-
-								<script>
-									function openNav(item) {
-										console.log(item); 
-										document.getElementById(item + "-layer").style.height = "100%";
-									}
-
-									function closeNav(item) {
-										document.getElementById(item + "-layer").style.height = "0%";
-									}
-								</script>
-						</div>
 					</div>
+
+					<div id="away-layer" class="project-overlay">  
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav('away')">&times;</a>
+						
+							<div class="project project-overlay__content">
+								<div class="project-title">
+									<h2 class="text-center">Away - GBJam 5</h2><em class="text-center">October, 2016</em>
+								</div>
+
+								<div class="project-description">
+									<p>This game was made for the GBJam5. The rules of this game jam where to create a GameBoy style game, with a low resolution (160x144) and four colors.</p>
+									<p> The theme of this game it's a mix between infinite scroller and stealth game, based on games like MGS. The aim of the player it's avoid the different obstacles (generated procedurally), avoid/kill the enemies and avoid get raised by the spot Light on the left.</p>
+									<p class="hidden-xs">I worked in a group of six (3 programers, 2 artist and a musician) to create it. My role in this game (as a creator and programmer) was related with the main gameplays of the game and the creation of the procedural generator.</p>
+								</div>
+
+								<div class="project-actions">
+									<a href="https://dgoldaraz.itch.io/away-gbjam5" target="_blank">
+										<div class="btn-project">
+											<div>Find out more <i class="fa fa-arrow-circle-right"></i></div>
+										</div>
+									</a>
+								</div>
+							</div>
+					</div>
+
+					<div id="rocket_landing-layer" class="project-overlay">  
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav('rocket_landing')">&times;</a>
+						
+							<div class="project project-overlay__content">
+								<div class="project-title">
+									<h2 class="text-center">Rocket Landing Game</h2><em class="text-center">September, 2016</em>
+								</div>
+
+								<div class="project-description">
+									<p>This game is the result of my own implementation of a RigidBody in Unity3D, used to simulate a spaceship and the effect of gravity/accelerations.</p>
+									<p class="hidden-xs">In this game you need to save your delivery company landing your merchandise rocket in different scenarios. You will need to deal with the obstacles in the field, different gravities, the weight of your rocket (depending of the fuel) and more.</p>
+								</div>
+
+								<div class="project-actions">
+									<a href="https://dgoldaraz.itch.io/rocket-landing" target="_blank">
+										<div class="btn-project">
+											<div>Find out more <i class="fa fa-arrow-circle-right"></i></div>
+										</div>
+									</a>
+								</div>
+							</div>
+					</div>
+
+					<div id="path_finding-layer" class="project-overlay">  
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav('path_finding')">&times;</a>
+						
+							<div class="project project-overlay__content">
+								<div class="project-title">
+									<h2 class="text-center">Pathfinding Project</h2><em class="text-center">September, 2016</em>
+								</div>
+
+								<div class="project-description">
+									<p>This is a basic experimental project to test different PathFinding Algorithms​ (Dijkstra and A*)using Unity. To that pourpose, I created a basic grid where the user can create walls and decide the target to reach. Then the different algorithm will show how the player creates and follow the path to reach the destination.</p>
+									<p class="hidden-xs">This example has a set of utilities for the user to test the pathfinding. This means that there are two different cameras (Ortho-Graphic and perspective), the user can do multiselection of tiles (pressing Alt) and decide the use of diagonal movements or not.</p>
+								</div>
+
+								<div class="project-actions">
+									<a href="https://dgoldaraz.itch.io/pathfinding-experiment" target="_blank">
+										<div class="btn-project">
+											<div>Find out more <i class="fa fa-arrow-circle-right"></i></div>
+										</div>
+									</a>
+								</div>
+							</div>
+					</div>
+
+					<div id="laser_defender-layer" class="project-overlay">  
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav('laser_defender')">&times;</a>
+						
+							<div class="project project-overlay__content">
+								<div class="project-title">
+									<h2 class="text-center">Laser Defender Game</h2><em class="text-center">February, 2016</em>
+								</div>
+
+								<div class="project-description">
+									<p>This is an Arcade game where you need to reach the maximum distance on your escape from the big Company. To do that, you should avoid any collision and you need to destroy different squadrons. </p>
+									<p class="hidden-xs">This game, made in Unity, has a dynamic difficult system of squadrons/ships. Depending on the distance covered, the squadrons will dynamically change and increase the difficulty. Also it includes a set of <em>"initial players"</em>  that allows to decide different ways of play.</p>
+								</div>
+
+								<div class="project-actions">
+									<a href="https://dgoldaraz.itch.io/laser-defender-the-long-journey" target="_blank">
+										<div class="btn-project">
+											<div>Find out more <i class="fa fa-arrow-circle-right"></i></div>
+										</div>
+									</a>
+								</div>
+							</div>
+					</div>
+
+					<div id="block_breaker-layer" class="project-overlay">  
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav('block_breaker')">&times;</a>
+						
+							<div class="project project-overlay__content">
+								<div class="project-title">
+									<h2 class="text-center">Block Breaker Game</h2><em class="text-center">December, 2015</em>
+								</div>
+
+								<div class="project-description">
+									<p>This is an Arkanoid game made with Unity, with some added features. You can use both your mouse or your Keyboard to move the paddle.</p> 
+									<p>There is a total of 10 levels to play, movable blocks and different perks that change the game.</p>
+								</div>
+
+								<div class="project-actions">
+									<a href="https://dgoldaraz.itch.io/block-breaker" target="_blank">
+										<div class="btn-project">
+											<div>Find out more <i class="fa fa-arrow-circle-right"></i></div>
+										</div>
+									</a>
+								</div>
+							</div>
+					</div>
+
+						<script>
+							function openNav(item) {
+								console.log(item); 
+								document.getElementById(item + "-layer").style.height = "100%";
+							}
+
+							function closeNav(item) {
+								document.getElementById(item + "-layer").style.height = "0%";
+							}
+						</script>
 				</div>
 
 				<!--

@@ -1,2 +1,3 @@
 name: Daniel Goldaraz
 markdown: kramdown
+permalink: /portfolio/:title

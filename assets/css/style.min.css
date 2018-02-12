@@ -81,8 +81,8 @@ html {
   min-height: 100%;
 }
 body {
-  color: #858585;
-  font: 300 14px/14px "Lato", Helvetica, Arial, sans-serif;
+  color: #222;
+  font: 400 14px/14px "Lato", Helvetica, Arial, sans-serif;
   background-color: #fff;
   -webkit-font-smoothing: antialiased;
 }
@@ -763,6 +763,7 @@ div.btn-project:active {
   margin-bottom: 50px;
   position: relative;
   display: inline-block;
+  width: 100%;
 }
 .timeline .timeline-item .timeline-date {
   position: absolute;
@@ -807,10 +808,6 @@ div.btn-project:active {
   color: #fff;
   margin: -20px -20px 0 -20px;
   font-weight: 300;
-  -webkit-border-radius: 3px 3px 0 0;
-  -moz-border-radius: 3px 3px 0 0;
-  -ms-border-radius: 3px 3px 0 0;
-  border-radius: 3px 3px 0 0;
 }
 .timeline .timeline-item .timeline-content p {
   font-size: 16px;
@@ -1034,6 +1031,11 @@ div.btn-project:active {
   .circle h1 {
     font-size: 16px;
   }
+  .tag {
+    display: block;
+    width: 20%;
+    float: left;
+  }
 }
 @media only screen and (max-width: 767px) {
   body {
@@ -1140,11 +1142,6 @@ div.btn-project:active {
   }
   .circle h1 {
     font-size: 12px;
-  }
-  .tag {
-    display: block;
-    width: 20%;
-    float: left;
   }
 }
 @media only screen and (max-width: 480px) {
