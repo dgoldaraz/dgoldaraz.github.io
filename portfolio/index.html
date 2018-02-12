@@ -29,43 +29,20 @@ isContactActive:
 	
 				<ul class="posts">
 					{% for post in site.posts %}
-					<li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+					<li><a href="{{ post.url }}" title="{{ post.id }}">{{ post.title }}</a></li>
 					{% endfor %}
 				</ul>
 
 				<div class="portfolio-grid">
 
 					<section class="thumbnail-grid flex">
-						<a href="javascript:void(0)" class="flex-item" onclick="openNav('bubble_experiment')">
-							<figure class="bubble_experiment-figure">
-								<figcaption>Bubble Experiment</figcaption>
+						{% for post in site.posts %}
+						<a href="javascript:void(0)" class="flex-item" onclick="openNav('{{ post.id }}')">
+							<figure class="{{ post.id }}-figure">
+								<figcaption>{{ post.title }}</figcaption>
 							</figure>
 						</a>
-						<a href="javascript:void(0)" class="flex-item" onclick="openNav('away')">
-							<figure class="away-figure">
-								<figcaption>Away - GBJam 5</figcaption>
-							</figure>
-						</a>
-						<a href="javascript:void(0)" class="flex-item" onclick="openNav('rocket_landing')">
-							<figure class="rocket_landing-figure">
-								<figcaption>Rocket Landing Game</figcaption>
-							</figure>
-						</a>
-						<a href="javascript:void(0)" class="flex-item" onclick="openNav('path_finding')">
-							<figure class="-figure">
-								<figcaption>Pathfinding Project</figcaption>
-							</figure>
-						</a>
-						<a href="javascript:void(0)" class="flex-item" onclick="openNav('laser_defender')">
-							<figure class="laser_defender-figure">
-								<figcaption>Laser Defender Game</figcaption>
-							</figure>
-						</a>
-						<a href="javascript:void(0)" class="flex-item" onclick="openNav('block_breaker')">
-							<figure class="block_breaker-figure">
-								<figcaption>Block Breaker Game</figcaption>
-							</figure>
-						</a>
+						{% endfor %}
 					</section>
 
 					<div id="bubble_experiment-layer" class="project-overlay">  
