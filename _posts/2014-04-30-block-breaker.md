@@ -1,5 +1,6 @@
 ---
 layout: post
+id: block_breaker
 title: "Block Breaker Game"
 date: 2014-04-30
 ---

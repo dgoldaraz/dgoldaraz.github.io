@@ -1,5 +1,6 @@
 ---
 layout: post
+id: bubble_experiment
 title: "Bubble Experiment"
 date: 2014-04-30
 ---

@@ -1,5 +1,6 @@
 ---
 layout: post
+id: laser_defender
 title: "Laser Defender Game"
 date: 2014-04-30
 ---
