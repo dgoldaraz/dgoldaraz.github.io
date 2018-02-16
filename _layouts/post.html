@@ -8,12 +8,28 @@ layout: default
     <div class="project">
         <div class="container">
 
-          <h1>{{ page.title }}</h1>
-
-          <div class="post">
-            {{ content }}
+          <div class="project-title">
+            <h2>{{ page.title }}</h2>
           </div>
 
+          <div id="row">
+              <div class="col-md-9">
+                  <div class="project-description">
+                      {{ content }}
+                  </div>
+              </div>
+
+              <div class="col-md-3">
+                 <h2 class="project-year">{{ page.year }}</h2> 
+
+                  <div class="project-actions">
+                      <a href="{{ page.url}}" target="_blank">
+                              <div>Find out more <i class="fa fa-arrow-circle-right"></i></div>
+                          </div>
+                      </a>
+                  </div>                 
+              </div>
+            </div>
         </div>
     </div>
     <!-- Project Ends-->

@@ -78,7 +78,7 @@
 /**************************************************/
 html {
   position: relative;
-  min-height: 100%;
+  min-height: calc(100% - 40px);
 }
 body {
   color: #222;
@@ -442,7 +442,7 @@ div.btn-project:active {
 .navbar-brand .navbar-brand-role {
   font-size: 14px;
   line-height: 60px;
-  padding: 30px 10px;
+  padding: 0px 10px;
 }
 .navbar-default .navbar-nav > li > a {
   color: #222 !important;
@@ -985,7 +985,8 @@ div.btn-project:active {
   margin-right: 1px;
   margin-bottom: 4px;
   padding: 10px 15px;
-  border: 3px solid #ddd;
+  background-color: #D3F6EF;
+  border: 3px solid #2ad2b0;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
