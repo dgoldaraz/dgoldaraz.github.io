@@ -520,19 +520,20 @@ div.btn-project:active {
   border: 0;
   border-top: 4px solid #ddd;
 }
+/* Project */
 .project {
-  width: 100%;
-  padding: 0 10%;
-  height: 100%;
-}
-.project .content {
-  margin: 20px 0;
-  padding: 30px;
-  height: 100%;
-}
-.project .content.col-sm-8,
-.project .content.col-sm-12 {
-  border-left: 4px solid #ddd;
+  background: #fff;
+  background-size: cover;
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  vertical-align: baseline;
+  text-align: center;
+  padding: 60px 0;
 }
 .project .item {
   float: left;
@@ -545,13 +546,16 @@ div.btn-project:active {
 .project-title {
   width: 100%;
   padding-bottom: 10px;
+  padding-left: 15px;
 }
 .project-title h2 {
+  font-size: 16px;
+  text-align: left;
   color: #2ad2b0;
 }
 .project-title em {
-  color: white;
   font-size: 21px;
+  color: #fff;
 }
 .project-description {
   width: 100%;
@@ -561,8 +565,18 @@ div.btn-project:active {
 .project-description p {
   font-size: 18px;
   line-height: 26px;
-  color: white;
+  color: #222;
   margin-bottom: 10px;
+}
+.project-year,
+.project-technology {
+  color: #364B71;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  display: block;
+  padding-top: 20px;
 }
 .project-images {
   display: flex;
@@ -572,14 +586,12 @@ div.btn-project:active {
   padding: 20px 0;
 }
 .project-actions {
-  text-align: center;
-  display: flex;
-  justify-content: center;
+  text-align: left;
   width: 100%;
   clear: both;
-  padding: 5px 0;
+  padding: 20px 0;
 }
-/* ---- .grid ---- */
+/* Grid */
 .grid {
   background: #DDD;
 }
@@ -588,7 +600,7 @@ div.btn-project:active {
   display: block;
   clear: both;
 }
-/* ---- .grid-item ---- */
+/* Grid Item */
 .thumbnail-grid {
   user-select: none;
 }
@@ -629,7 +641,7 @@ div.btn-project:active {
 .flex-item {
   flex: 1 0 auto;
 }
-/* ---- Thumbnails---- */
+/* Thumbnails */
 .thumbnail-grid figure.bubble_experiment-figure {
   background: url('../img/portfolio/bubble_experiment/1.png') no-repeat center;
   background-size: cover;
@@ -660,55 +672,6 @@ div.btn-project:active {
   }
   .thumbnail-grid figure.i3 {
     background-image: url(https://anselmurban.de/codepen-img/goerlitzmade%402x.png);
-  }
-}
-.project-overlay {
-  height: 0%;
-  width: 100%;
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  left: 0;
-  background-color: #000000;
-  background-color: rgba(0, 0, 0, 0.97);
-  overflow-y: hidden;
-  transition: 0.5s;
-}
-.project-overlay__content {
-  position: relative;
-  top: 20%;
-  width: 100%;
-  text-align: center;
-}
-.project-overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-.project-overly a:hover,
-.project-overlay a:focus {
-  color: #f1f1f1;
-}
-.project-overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 25px;
-  font-size: 60px;
-}
-@media screen and (max-height: 450px) {
-  .project-overlay {
-    overflow-y: auto;
-  }
-  .project-overlay a {
-    font-size: 20px;
-  }
-  .project-overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
   }
 }
 /**************************************************/

@@ -2,99 +2,112 @@
 /* Portfolio */
 /**************************************************/
 
-.portfolio {
-    background: @portfolio-color-background no-repeat;
-    background-size: cover;
-    border: 0;
-    font-family: inherit;
-    font-size: 100%;
-    font-style: inherit;
-    font-weight: inherit;
-    margin: 0;
-    outline: 0;
-    vertical-align: baseline;
-    text-align: center;
-    padding: 60px 0;
-
-    hr {
-        margin-top: 20px;
-        margin-bottom: 20px;
+    .portfolio {
+        background: @portfolio-color-background no-repeat;
+        background-size: cover;
         border: 0;
-        border-top: 4px solid #ddd;
-    }
-}
-.project {
-    width: 100%;
-    padding: 0 10%;
-    height: 100%;
+        font-family: inherit;
+        font-size: 100%;
+        font-style: inherit;
+        font-weight: inherit;
+        margin: 0;
+        outline: 0;
+        vertical-align: baseline;
+        text-align: center;
+        padding: 60px 0;
 
-    .content{
-        //background-color: #96AEDA; 
-        margin: 20px 0;
-        padding: 30px;
-        height: 100%;
-
-        &.col-sm-8, 
-        &.col-sm-12{
-            border-left: 4px solid #ddd;
+        hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 0;
+            border-top: 4px solid #ddd;
         }
     }
 
-    .item{
-        float: left;
-        margin: 10px;
+    /* Project */
+    .project {
+        background: @color-white; 
+        background-size: cover;
+        border: 0;
+        font-family: inherit;
+        font-size: 100%;
+        font-style: inherit;
+        font-weight: inherit;
+        margin: 0;
+        outline: 0;
+        vertical-align: baseline;
+        text-align: center;
+        padding: 60px 0;
+
+        .item {
+            float: left;
+            margin: 10px;
+        }
+
+        .img-responsive {
+            width: 150px;
+            height: 150px;
+        }
     }
 
-    .img-responsive {
-        width: 150px;
-        height: 150px;
+    .project-title {
+        width: 100%;
+        padding-bottom: 10px;
+        padding-left: 15px;
+
+        h2 {
+            font-size: 16px;
+            text-align: left;
+            color: @secondaly-color;
+        }
+
+        em {
+            font-size: 21px; 
+            color: @color-white;  
+        }
     }
-}
-.project-title {
-    width: 100%;
-    padding-bottom: 10px;
+    
+    .project-description {
+        width: 100%;
+        text-align: left; 
+        padding: 10px 0;
 
-    h2{
-        color: #2ad2b0;
+        p {
+            font-size: 18px;
+            line-height: 26px;
+            color: @color-black;
+            margin-bottom: 10px;
+        }
     }
 
-    em{
-        color: white;
-        font-size: 21px; 
+    .project-year, 
+    .project-technology {
+        color: @primary-color; 
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: left;
+        display: block;
+        padding-top: 20px;
     }
-}
-.project-description {
-    width: 100%;
-    text-align: left; 
-    padding: 10px 0;
 
-    p {
-        font-size: 18px;
-        line-height: 26px;
-        color: white;
-        margin-bottom: 10px;
+    .project-images {
+        display: flex;
+        justify-content: center;
+        width: 100%; 
+        clear: both;
+        padding: 20px 0;
     }
-}
 
-.project-images {
-    display: flex;
-    justify-content: center;
-    width: 100%; 
-    clear: both;
-    padding: 20px 0;
-}
+    .project-actions {
+        text-align: left;
+        width: 100%; 
+        clear: both;
+        padding: 20px 0;
+    }
 
-.project-actions {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    width: 100%; 
-    clear: both;
-    padding: 5px 0;
-}
-
-/* ---- .grid ---- */
-.grid {
+    /* Grid */
+    .grid {
     background: #DDD;
     }
 
@@ -104,7 +117,7 @@
     clear: both;
     }
 
-    /* ---- .grid-item ---- */
+    /* Grid Item */
     .thumbnail-grid {
         user-select: none
     }
@@ -146,7 +159,7 @@
         flex: 1 0 auto
     }
 
-    /* ---- Thumbnails---- */
+    /* Thumbnails */
     .thumbnail-grid figure.bubble_experiment-figure {
         background: url('../img/portfolio/bubble_experiment/1.png') no-repeat center;
         background-size: cover;
@@ -182,55 +195,4 @@
         .thumbnail-grid figure.i3 {
             background-image: url(https://anselmurban.de/codepen-img/goerlitzmade%402x.png)
         }
-    }
-
-
-    .project-overlay {
-        height: 0%;
-        width: 100%;
-        position: fixed;
-        z-index: 9999;
-        top: 0;
-        left: 0;
-        background-color: rgb(0,0,0);
-        background-color: rgba(0,0,0, 0.97);
-        overflow-y: hidden;
-        transition: 0.5s;
-    }
-
-    .project-overlay__content{
-        position: relative;
-        top: 20%;
-        width: 100%;
-        text-align: center;
-    }
-
-    .project-overlay a {
-        padding: 8px;
-        text-decoration: none;
-        font-size: 36px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
-    }
-
-    .project-overly a:hover, .project-overlay a:focus {
-        color: #f1f1f1;
-    }
-
-    .project-overlay .closebtn {
-        position: absolute;
-        top: 20px;
-        right: 25px;
-        font-size: 60px;
-    }
-
-    @media screen and (max-height: 450px) {
-    .project-overlay {overflow-y: auto;}
-    .project-overlay a {font-size: 20px}
-    .project-overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
     }
