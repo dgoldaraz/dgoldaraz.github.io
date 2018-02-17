@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: laser_defender
-tags:
+tags: 1.gif
 title: "Laser Defender Game"
 year: February, 2016
 technology: C++, xxxx, xxxx

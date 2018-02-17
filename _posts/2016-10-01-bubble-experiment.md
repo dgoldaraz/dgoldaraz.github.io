@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: bubble_experiment
-tags: 
+tags: 1.gif 1.png 2.png 3.png
 title: "Bubble Experiment"
 year: October, 2016
 technology: C++, xxxx, xxxx

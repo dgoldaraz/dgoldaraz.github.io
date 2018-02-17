@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: block_breaker
-tags:
+tags: 1.gif 1.png 2.png
 title: "Block Breaker Game"
 year: December, 2015
 technology: C++, xxxx, xxxx
