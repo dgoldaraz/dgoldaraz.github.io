@@ -1,10 +1,11 @@
 ---
 layout: post
 categories: rocket_landing
+tags: 
 title: "Rocket Landing Game"
 year: September, 2016
 technology: C++, xxxx, xxxx
-url: https://dgoldaraz.itch.io/rocket-landing
+findMoreUrl: https://dgoldaraz.itch.io/rocket-landing
 date: 2016-09-01
 ---
 						

@@ -1,10 +1,11 @@
 ---
 layout: post
 categories: laser_defender
+tags:
 title: "Laser Defender Game"
 year: February, 2016
 technology: C++, xxxx, xxxx
-url: https://dgoldaraz.itch.io/laser-defender-the-long-journey
+findMoreUrl: https://dgoldaraz.itch.io/laser-defender-the-long-journey
 date: 2016-02-01
 ---
 

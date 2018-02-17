@@ -1,10 +1,11 @@
 ---
 layout: post
 categories: bubble_experiment
+tags: 
 title: "Bubble Experiment"
 year: October, 2016
 technology: C++, xxxx, xxxx
-url: https://dgoldaraz.itch.io/bubble-experiment
+findMoreUrl: https://dgoldaraz.itch.io/bubble-experiment
 date: 2016-10-01
 ---
 

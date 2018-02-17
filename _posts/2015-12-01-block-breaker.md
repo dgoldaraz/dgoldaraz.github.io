@@ -1,10 +1,11 @@
 ---
 layout: post
 categories: block_breaker
+tags:
 title: "Block Breaker Game"
 year: December, 2015
 technology: C++, xxxx, xxxx
-url: https://dgoldaraz.itch.io/block-breaker
+findMoreUrl: https://dgoldaraz.itch.io/block-breaker
 date: 2015-12-01
 ---
 
