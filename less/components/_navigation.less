@@ -4,50 +4,74 @@
 /**************************************************/
     .navbar-header {
         width: 100%;
+        height: 90px;
         float: none;
         background: @primary-color; 
     }
     .navbar-nav > li > a {
         font-size: 16px;
-        line-height: 25px;
-        padding: 30px 10px;
+        line-height: 16px;
+        padding: 15px 10px;
     }
     .navbar-inverse {
         background: #111;
     }
-    .navbar-brand {
+    .navbar-default .navbar-brand {
         color: @color-white !important;
-        background: @primary-color !important;
-        height: 90px;
+        background: @primary-color; 
+        height: 120px;
         font-weight: 700;
         text-transform: uppercase;
         padding: 15px 0px;
+
+        &:focus, 
+        &:hover {
+            color: @color-white !important;
+            background: @primary-color; 
+        }
     }
     .show-navbar {
-        .navbar-brand{
-            height: 60px;
+        .navbar-header {
+            height: 70px
+        }
+        .navbar-default .navbar-collapse {
+            top: 29px;
+        }
+        .navbar-brand {
+            height: auto;
         }
         .navbar-brand .navbar-brand-role {
             padding: 15px 10px;
             line-height: 14px;
         }
         .navbar-nav > li > a {
-            padding: 15px 10px;
+            padding: 10px 10px;
         }
     }
-    .navbar-brand-link{
-        width: 50%; 
-        text-align: left; 
+    .navbar-brand-link {
+        width: 200px; 
+        text-align: center; 
     }
 
     .navbar-brand .navbar-brand-name {
-        font-size: 18px;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 1.8px;
+        display: block
+    }
+    .navbar-brand .navbar-brand-lastname {
+        font-size: 32px;
         line-height: 32px;
+        letter-spacing: 1.8px;
+        text-transform: capitalize;
+        display: block
     }
     .navbar-brand .navbar-brand-role {
         font-size: 14px;
-        line-height: 60px;
-        padding: 0px 10px;
+        line-height: 30px;
+        text-transform: lowercase;
+        letter-spacing: 1.8px;
+        padding: 0;
     }
     .navbar-default .navbar-nav>li>a {
         color: @color-black !important;
@@ -72,6 +96,8 @@
     .navbar-default {
         opacity: 1;
         display: block;
+        border:0; 
+        background: transparent;
     }
     .show-navbar {
         background: none;
@@ -80,7 +106,7 @@
     }
     .navbar-default .navbar-collapse {
         position: absolute;
-        top: 0;
+        top: 39px;
         right: 15px;
     }
     .nav-collapse ul {
@@ -95,7 +121,7 @@
         display: block;
     }
     .navbar-toggle {
-        padding: 10px 5px;
+        padding: 8px 5px;
         margin: 0px;
     }
     .navbar-nav li {

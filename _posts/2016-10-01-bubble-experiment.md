@@ -4,7 +4,7 @@ categories: bubble_experiment
 tags: 1.gif 1.png 2.png 3.png
 title: "Bubble Experiment"
 year: October, 2016
-technology: C++, xxxx, xxxx
+technology: C#, Unity 
 findMoreUrl: https://dgoldaraz.itch.io/bubble-experiment
 date: 2016-10-01
 ---

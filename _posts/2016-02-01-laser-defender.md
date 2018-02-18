@@ -4,7 +4,7 @@ categories: laser_defender
 tags: 1.gif
 title: "Laser Defender Game"
 year: February, 2016
-technology: C++, xxxx, xxxx
+technology: C#, Unity
 findMoreUrl: https://dgoldaraz.itch.io/laser-defender-the-long-journey
 date: 2016-02-01
 ---

@@ -4,7 +4,7 @@ categories: rocket_landing
 tags: 1.png 2.png 3.png
 title: "Rocket Landing Game"
 year: September, 2016
-technology: C++, xxxx, xxxx
+technology: C#, Unity
 findMoreUrl: https://dgoldaraz.itch.io/rocket-landing
 date: 2016-09-01
 ---

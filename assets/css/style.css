@@ -12,7 +12,7 @@
   padding-top: 90px;
 }
 .spacer {
-  padding: 5px 30% 5px 30%;
+  padding: 5px 40% 5px 40%;
 }
 .sub-title-block {
   width: 100%;
@@ -90,7 +90,7 @@ body {
 /* Copy */
 /**************************************************/
 p {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 26px;
   margin-bottom: 26px;
 }
@@ -150,7 +150,7 @@ h2 {
   font: 500 36px "Lato", Helvetica, Arial, sans-serif;
   margin-top: 15px;
   text-transform: uppercase;
-  letter-spacing: .125em;
+  letter-spacing: 1.8px;
   margin-bottom: 5px;
   color: #364B71;
 }
@@ -402,47 +402,70 @@ div.btn-project:active {
 /**************************************************/
 .navbar-header {
   width: 100%;
+  height: 90px;
   float: none;
   background: #364B71;
 }
 .navbar-nav > li > a {
   font-size: 16px;
-  line-height: 25px;
-  padding: 30px 10px;
+  line-height: 16px;
+  padding: 15px 10px;
 }
 .navbar-inverse {
   background: #111;
 }
-.navbar-brand {
+.navbar-default .navbar-brand {
   color: #fff !important;
-  background: #364B71 !important;
-  height: 90px;
+  background: #364B71;
+  height: 120px;
   font-weight: 700;
   text-transform: uppercase;
   padding: 15px 0px;
 }
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:hover {
+  color: #fff !important;
+  background: #364B71;
+}
+.show-navbar .navbar-header {
+  height: 70px;
+}
+.show-navbar .navbar-default .navbar-collapse {
+  top: 29px;
+}
 .show-navbar .navbar-brand {
-  height: 60px;
+  height: auto;
 }
 .show-navbar .navbar-brand .navbar-brand-role {
   padding: 15px 10px;
   line-height: 14px;
 }
 .show-navbar .navbar-nav > li > a {
-  padding: 15px 10px;
+  padding: 10px 10px;
 }
 .navbar-brand-link {
-  width: 50%;
-  text-align: left;
+  width: 200px;
+  text-align: center;
 }
 .navbar-brand .navbar-brand-name {
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 1.8px;
+  display: block;
+}
+.navbar-brand .navbar-brand-lastname {
+  font-size: 32px;
   line-height: 32px;
+  letter-spacing: 1.8px;
+  text-transform: capitalize;
+  display: block;
 }
 .navbar-brand .navbar-brand-role {
   font-size: 14px;
-  line-height: 60px;
-  padding: 0px 10px;
+  line-height: 30px;
+  text-transform: lowercase;
+  letter-spacing: 1.8px;
+  padding: 0;
 }
 .navbar-default .navbar-nav > li > a {
   color: #222 !important;
@@ -467,6 +490,8 @@ div.btn-project:active {
 .navbar-default {
   opacity: 1;
   display: block;
+  border: 0;
+  background: transparent;
 }
 .show-navbar {
   background: none;
@@ -475,7 +500,7 @@ div.btn-project:active {
 }
 .navbar-default .navbar-collapse {
   position: absolute;
-  top: 0;
+  top: 39px;
   right: 15px;
 }
 .nav-collapse ul {
@@ -490,7 +515,7 @@ div.btn-project:active {
   display: block;
 }
 .navbar-toggle {
-  padding: 10px 5px;
+  padding: 8px 5px;
   margin: 0px;
 }
 .navbar-nav li {
@@ -520,6 +545,9 @@ div.btn-project:active {
   border: 0;
   border-top: 4px solid #ddd;
 }
+.portfolio-description {
+  text-align: left;
+}
 /* Project */
 .project {
   background: #fff;
@@ -540,8 +568,8 @@ div.btn-project:active {
   margin: 10px;
 }
 .project .img-responsive {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
 }
 .project-title {
   width: 100%;
@@ -549,7 +577,7 @@ div.btn-project:active {
   padding-left: 15px;
 }
 .project-title h2 {
-  font-size: 16px;
+  font-size: 26px;
   text-align: left;
   color: #2ad2b0;
 }
@@ -563,8 +591,7 @@ div.btn-project:active {
   padding: 10px 0;
 }
 .project-description p {
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 20px;
   color: #222;
   margin-bottom: 10px;
 }
@@ -576,7 +603,6 @@ div.btn-project:active {
   text-transform: uppercase;
   text-align: left;
   display: block;
-  padding-top: 20px;
 }
 .project-images {
   display: flex;
@@ -590,6 +616,8 @@ div.btn-project:active {
   width: 100%;
   clear: both;
   padding: 20px 0;
+  font-size: 16px;
+  font-weight: bold;
 }
 /* Grid */
 .grid {
@@ -608,7 +636,7 @@ div.btn-project:active {
   position: relative;
   min-width: 250px;
   height: 250px;
-  margin: 5px;
+  margin: 15px;
   border-radius: 3px;
   box-shadow: inset 0 -40px 0 0 rgba(0, 0, 0, 0.1);
   transition: all 0.2s ease-in-out;
@@ -621,8 +649,10 @@ div.btn-project:active {
   width: 100%;
   text-align: center;
   color: #fff;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
   text-shadow: 0 0 3px #000;
   bottom: 30px;
   transition: all 0.2s ease-in-out;
@@ -882,38 +912,38 @@ div.btn-project:active {
 /**************************************************/
 /* Social links */
 /**************************************************/
+.socialnav {
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
 .socialnav .socialnavitem {
   display: inline-block;
   width: 35px;
   height: 35px;
   line-height: 35px;
-  background: #aaa;
-  color: white;
   text-align: center;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
   font-size: 20px;
 }
 .socialnav ul {
   padding: 0;
   margin: 0;
 }
-.socialnav li {
+.socialnav ul li {
   display: inline-block;
   padding: 0 0em .15em 0;
 }
 .socialnav .socialnavitem--itchio:hover {
-  background: #DD4A4A;
+  color: #DD4A4A;
 }
 .socialnav .socialnavitem--twitter:hover {
-  background: #00aced;
+  color: #00aced;
 }
 .socialnav .socialnavitem--linkedin:hover {
-  background: #007bb6;
+  color: #007bb6;
 }
 .socialnav .socialnavitem--github:hover {
-  background: #444444;
+  color: black;
 }
 .socialnavitem--itchio {
   background: url(../img/itchio.png) no-repeat 0px 0px !important;
@@ -972,7 +1002,7 @@ div.btn-project:active {
     font-size: 55px;
   }
   h2 {
-    font-size: 28px;
+    font-size: 24px;
     margin-bottom: 8px;
   }
   h3 {
@@ -1032,29 +1062,34 @@ div.btn-project:active {
   }
   .navbar-header {
     width: auto;
+    height: 60px;
   }
-  .navbar-brand {
+  .navbar-default .navbar-brand {
+    height: auto;
+    text-align: center;
+  }
+  .navbar-default .navbar-brand.navbar-brand-link {
     padding: 10px;
-    height: 50px;
+    height: 90px;
     line-height: 32px;
     margin-left: 0px;
+    width: 50%;
   }
-  .navbar-brand-link {
-    width: calc(100% - 100px);
-  }
-  .navbar-brand .navbar-brand-name {
-    font-size: 16px;
+  .navbar-default .navbar-brand .navbar-brand-name {
+    font-size: 12px;
     line-height: 14px;
     display: block;
   }
-  .navbar-brand .navbar-brand-role {
+  .navbar-default .navbar-brand .navbar-brand-lastname {
+    font-size: 20px;
+    line-height: 14px;
+    display: block;
+  }
+  .navbar-default .navbar-brand .navbar-brand-role {
     font-size: 12px;
     line-height: 18px;
     padding: 5px 0;
     display: block;
-  }
-  .show-navbar .navbar-brand {
-    height: 50px;
   }
   .show-navbar .navbar-brand .navbar-brand-role {
     line-height: 18px;

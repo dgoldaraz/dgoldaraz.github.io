@@ -4,7 +4,7 @@ categories: fracture_simulator
 tags: 
 title: "Fracture simulator"
 year: July, 2011
-technology: C++, Bullet Engine
+technology: C++, Bullet Engine, OGRE
 findMoreUrl: https://dgoldaraz.github.io/assets/files/fracture_simulation_Daniel_Goldaraz.pdf
 date: 2011-07-01
 ---

@@ -4,7 +4,7 @@ categories: block_breaker
 tags: 1.gif 1.png 2.png
 title: "Block Breaker Game"
 year: December, 2015
-technology: C++, xxxx, xxxx
+technology: C#, Unity 
 findMoreUrl: https://dgoldaraz.itch.io/block-breaker
 date: 2015-12-01
 ---

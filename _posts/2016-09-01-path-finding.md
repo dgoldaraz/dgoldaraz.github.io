@@ -4,7 +4,7 @@ categories: pathfinding
 tags: 
 title: "Pathfinding Project"
 year: September, 2016
-technology: C++, xxxx, xxxx
+technology: C#, Unity
 findMoreUrl: https://dgoldaraz.itch.io/pathfinding-experiment
 date: 2016-09-01
 ---
