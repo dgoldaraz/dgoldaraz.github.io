@@ -1091,9 +1091,15 @@ div.btn-project:active {
     padding: 5px 0;
     display: block;
   }
+  .show-navbar .navbar-header {
+    height: 60px;
+  }
   .show-navbar .navbar-brand .navbar-brand-role {
     line-height: 18px;
     padding: 5px 0;
+  }
+  .show-navbar .navbar-brand .navbar-brand-link {
+    height: 60px;
   }
   .navbar-default {
     background: #fff !important;
@@ -1116,6 +1122,9 @@ div.btn-project:active {
   }
   .col {
     width: 25%;
+  }
+  .socialnav {
+    top: 10px;
   }
   .actions-block {
     padding: 10% 10% 0;
