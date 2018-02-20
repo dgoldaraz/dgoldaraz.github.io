@@ -430,7 +430,7 @@ div.btn-project:active {
 .show-navbar .navbar-header {
   height: 70px;
 }
-.show-navbar .navbar-header .navbar-default .navbar-collapse {
+.show-navbar .navbar-header .navbar-collapse {
   top: 29px;
 }
 .show-navbar .navbar-brand {
@@ -689,7 +689,7 @@ div.btn-project:active {
   background-size: cover;
 }
 .thumbnail-grid figure.block_breaker-figure {
-  background: url('../img/portfolio/block_breaker/1.gif') no-repeat center;
+  background: url('../img/portfolio/block_breaker/1.png') no-repeat center;
   background-size: cover;
 }
 .thumbnail-grid figure.pathfinding-figure {
@@ -697,11 +697,11 @@ div.btn-project:active {
   background-size: cover;
 }
 .thumbnail-grid figure.fracture_simulator-figure {
-  background: url('../img/portfolio/away/1.png') no-repeat center;
+  background: url('../img/portfolio/fracture_simulator/1.png') no-repeat center;
   background-size: cover;
 }
 .thumbnail-grid figure.robot_rythm-figure {
-  background: url('../img/portfolio/robot_rythm/1.gif') no-repeat center;
+  background: url('../img/portfolio/robot_rythm/1.png') no-repeat center;
   background-size: cover;
 }
 /* Thumbnails for HiDPI/retina screens */
@@ -1074,7 +1074,7 @@ div.btn-project:active {
   }
   .navbar-header {
     width: auto;
-    height: 60px;
+    height: 65px;
   }
   .navbar-default .navbar-brand {
     height: auto;
@@ -1104,7 +1104,7 @@ div.btn-project:active {
     display: block;
   }
   .show-navbar .navbar-header {
-    height: 60px;
+    height: 65px;
   }
   .show-navbar .navbar-brand .navbar-brand-role {
     line-height: 18px;
