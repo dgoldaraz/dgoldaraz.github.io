@@ -430,7 +430,7 @@ div.btn-project:active {
 .show-navbar .navbar-header {
   height: 70px;
 }
-.show-navbar .navbar-default .navbar-collapse {
+.show-navbar .navbar-header .navbar-default .navbar-collapse {
   top: 29px;
 }
 .show-navbar .navbar-brand {
@@ -1099,7 +1099,7 @@ div.btn-project:active {
     padding: 5px 0;
   }
   .show-navbar .navbar-brand .navbar-brand-link {
-    height: 60px;
+    height: 70px;
   }
   .navbar-default {
     background: #fff !important;
