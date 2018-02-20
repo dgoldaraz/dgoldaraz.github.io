@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: fracture_simulator
-tags: 
+tags: 1.png 2.png 3.png 4.png
 title: "Fracture simulator"
 year: July, 2011
 technology: C++, Bullet Engine, OGRE

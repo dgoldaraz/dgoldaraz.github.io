@@ -1070,10 +1070,10 @@ div.btn-project:active {
   }
   .navbar-default .navbar-brand.navbar-brand-link {
     padding: 10px;
-    height: 90px;
+    height: 50px;
     line-height: 32px;
     margin-left: 0px;
-    width: 50%;
+    text-align: left;
   }
   .navbar-default .navbar-brand .navbar-brand-name {
     font-size: 12px;
@@ -1098,9 +1098,6 @@ div.btn-project:active {
     line-height: 18px;
     padding: 5px 0;
   }
-  .show-navbar .navbar-brand .navbar-brand-link {
-    height: 70px;
-  }
   .navbar-default {
     background: #fff !important;
   }
@@ -1108,6 +1105,7 @@ div.btn-project:active {
     position: relative;
     top: 0;
     right: 0;
+    background: #364B71;
   }
   .navbar-default .navbar-toggle,
   .navbar-default .navbar-toggle:hover,
@@ -1125,6 +1123,10 @@ div.btn-project:active {
   }
   .socialnav {
     top: 10px;
+  }
+  .socialnav .socialnavitem {
+    width: 25px;
+    height: 25px;
   }
   .actions-block {
     padding: 10% 10% 0;
