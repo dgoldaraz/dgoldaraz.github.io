@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: pathfinding
-tags: 
+tags: 1.gif 1.png
 title: "Pathfinding Project"
 year: September, 2016
 technology: C#, Unity
