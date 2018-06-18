@@ -3,7 +3,7 @@ layout: post
 categories: game_of_life
 tags: 1.gif 1.png 2.png 3.png
 title: "Game Of Life Simulator"
-year: November, 2016
+year: June, 2018
 technology: C++, Unreal
 findMoreUrl: https://dgoldaraz.itch.io/game-of-life-simulator
 date: 2018-06-01
