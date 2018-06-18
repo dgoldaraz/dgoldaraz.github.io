@@ -704,6 +704,10 @@ div.btn-project:active {
   background: url('../img/portfolio/robot_rythm/1.png') no-repeat center;
   background-size: cover;
 }
+.thumbnail-grid figure.game_life-figure {
+  background: url('../img/portfolio/game_life/1.gif') no-repeat center;
+  background-size: cover;
+}
 /* Thumbnails for HiDPI/retina screens */
 @media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
   .thumbnail-grid figure.i1 {
